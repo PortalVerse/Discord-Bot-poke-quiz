@@ -7,7 +7,7 @@ bot.on("message", msg =>{
 	
 	if(msg.author.bot) return;
 	
-	if(msg.member.hasRole("242949350664175616")){
+	if(msg.member.roles.has("242949350664175616")){
 	
 		if (msg.content.startsWith(prefix + "ping")) {
 		msg.channel.sendMessage("pong!");
