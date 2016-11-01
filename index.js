@@ -15,10 +15,6 @@ bot.on("message", msg =>{
 				msg.channel.sendMessage("You don\'t have the right role.");			
 			}
 		}
-
-		if(msg.content.startsWith(prefix + "avatar")) {
-			msg.reply(msg.author.avatarURL);
-		};
 });
 
 bot.login("MjQyNjA2OTMwNjEzMzcwODgw.CvjZiQ.sioME_mmVnUumvkYrVRnxnB4yeg");
