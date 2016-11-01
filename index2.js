@@ -12,4 +12,4 @@ bot.on("message", msg =>{
 		
 });
 
-bot.login("MjQyNjA2OTMwNjEzMzcwODgw.CvjZiQ.sioME_mmVnUumvkYrVRnxnB4yeg");
+bot.login("Insert token here");
