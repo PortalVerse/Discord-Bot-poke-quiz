@@ -3,22 +3,22 @@ var bot = new discord.Client();
 
 bot.on("message", msg =>{
 	let prefix = ";";
-	let myRole = msg.guild.roles.get("242949350664175616");
 	
 	if(msg.author.bot) return;
 	
-	if(msg.member.roles.has("242949350664175616")){
-	
 		if (msg.content.startsWith(prefix + "ping")) {
-		msg.channel.sendMessage("pong!");
-		
+			
+			if(msg.member.roles.has("242949350664175616")){
+				msg.channel.sendMessage("Pong!");				
+			}
+			else{
+				msg.channel.sendMessage("You don\'t have the right role.");			
+			}
 		}
-	
-	}
-	else{
-		msg.channel.sendMessage("You don\'t have the right role.")
-	}
-	
+
+		if(msg.content.startsWith(prefix + "avatar")) {
+			msg.reply(msg.author.avatarURL);
+		};
 });
 
 bot.login("MjQyNjA2OTMwNjEzMzcwODgw.CvjZiQ.sioME_mmVnUumvkYrVRnxnB4yeg");
