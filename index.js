@@ -3,8 +3,6 @@ var bot = new discord.Client();
 
 bot.on("message", msg =>{
 	let prefix = ";";
-	let myRole = msg.guild.roles.get("242949350664175616");
-	
 	if(msg.author.bot) return;
 	
 	if(msg.member.roles.has("242949350664175616")){
