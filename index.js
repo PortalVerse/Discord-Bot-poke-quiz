@@ -17,4 +17,4 @@ bot.on("message", msg =>{
 		}
 });
 
-bot.login("Insert token here");
+bot.login("MjQyNjA2OTMwNjEzMzcwODgw.CvjZiQ.sioME_mmVnUumvkYrVRnxnB4yeg");
