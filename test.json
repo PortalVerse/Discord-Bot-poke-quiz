@@ -1,6 +1,6 @@
-[
 {
-"question" : "What is test",
-"answer" : "test"
+   "Trivia": {
+      "question": "What is test",
+      "answer": "test"
+   }
 }
-]
