@@ -6,15 +6,15 @@ bot.on("message", msg =>{
 	
 	if(msg.author.bot) return;
 	
-		if (msg.content.startsWith(prefix + "ping")) {
+	if (msg.content.startsWith(prefix + "ping")) {
 			
-			if(msg.member.roles.has("242949350664175616")){
-				msg.channel.sendMessage("Pong!");				
-			}
-			else{
-				msg.channel.sendMessage("You don\'t have the right role.");			
-			}
+		if(msg.member.roles.has("242949350664175616")){
+			msg.channel.sendMessage("Pong!");				
 		}
+		else{
+			msg.channel.sendMessage("You don\'t have the right role.");			
+		}
+	}
 });
 
 bot.login("MjQyNjA2OTMwNjEzMzcwODgw.CvjZiQ.sioME_mmVnUumvkYrVRnxnB4yeg");

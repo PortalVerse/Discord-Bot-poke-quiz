@@ -5,7 +5,7 @@ var bot = new discord.Client();
 const database = require("./test.json");
 
 bot.on("ready", () => {
-	bot.user.setGame('with hentai');
+	bot.user.setGame('with Jessie');
 	console.log("Working");
 });
 
@@ -60,8 +60,8 @@ bot.on("message", msg =>{
 			// {
 				// return console.error(err);
 			// }
-			console.log("Asynchronous read: " + database.Trivia.question);
-			msg.channel.sendMessage((database.Trivia.question));
+			console.log("Asynchronous read: " + database.trivia.question1);
+			msg.channel.sendMessage(database.trivia.question1[0].toString())A;
 		};		
 });
 

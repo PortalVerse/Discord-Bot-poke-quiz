@@ -1,6 +1,12 @@
 {
-   "Trivia": {
-      "question": "What is test",
-      "answer": "test"
-   }
+	"trivia": {
+		"question1": [
+			{"question" : "What is test?"},
+			{"answer": "Test"}
+		],
+		"question2": [
+			{"question": "What is love?"},
+			{"answer": "Baby dont hurt me"}
+		]
+	}
 }
