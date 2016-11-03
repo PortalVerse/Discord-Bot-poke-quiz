@@ -3,6 +3,8 @@ var discord = require("discord.js");
 var fs = require("fs");
 var bot = new discord.Client();
 const database = require("./test.json");
+const BotConfig = require("./BotConfig.json");
+
 var answer;
 var dbanswer;
 
@@ -74,4 +76,4 @@ bot.on("message", msg =>{
 		};	
 });
 
-bot.login("MjQyNjA2OTMwNjEzMzcwODgw.CvjZiQ.sioME_mmVnUumvkYrVRnxnB4yeg");
+bot.login(BotConfig.login.token);
