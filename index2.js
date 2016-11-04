@@ -26,7 +26,7 @@ bot.on("message", msg =>{
 			msg.reply(msg.author.avatarURL);
 		};
 		
-		if(msg.content.startsWith(prefix + "hentai")) {
+		if(msg.content.startsWith(prefix + "h")) {
 			if(msg.author.id === "224841610410721290"){
 				msg.channel.sendFile("thing.gif");
 			}
